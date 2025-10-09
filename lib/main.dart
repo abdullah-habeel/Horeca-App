@@ -1,8 +1,11 @@
-//import 'package:final_project/view/login.dart';
-//import 'package:final_project/view/signup.dart';
-import 'package:final_project/view/login.dart';
-import 'package:final_project/view/splash/onboarding1.dart';
 //import 'package:final_project/view/practice.dart';
+// import 'package:final_project/view/home/home_page.dart';
+// import 'package:final_project/view/home/home_page1.dart';
+// import 'package:final_project/view/practice/gridview_builder.dart';
+// import 'package:final_project/view/practice/item_builder.dart';
+// import 'package:final_project/view/practice/list_view.dart/basic_listview.dart';
+// import 'package:final_project/view/practice/list_view.dart/listview_builder.dart';
+import 'package:final_project/view/practice/popup.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Splash1(),
+      home: FilterExample(),
     );
   }
 }

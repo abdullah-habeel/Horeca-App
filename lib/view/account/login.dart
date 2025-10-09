@@ -1,4 +1,3 @@
-import 'package:final_project/custom_widgets/bottom_curve_widget.dart';
 import 'package:final_project/custom_widgets/checkbox.dart';
 import 'package:final_project/custom_widgets/custom_color.dart';
 import 'package:final_project/custom_widgets/custom_eleveted_button.dart';
@@ -22,8 +21,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const BottomCurveWidget(),
-
       body: Stack(
         children: [
           Positioned.fill(

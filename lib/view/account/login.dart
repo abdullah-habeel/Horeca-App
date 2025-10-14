@@ -6,7 +6,10 @@ import 'package:final_project/custom_widgets/custom_text.dart';
 import 'package:final_project/custom_widgets/custom_textbutton.dart';
 import 'package:final_project/custom_widgets/custom_textformfield.dart';
 import 'package:final_project/custom_widgets/gapbox.dart';
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+// import 'package:get/get_core/src/get_main.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -73,7 +76,9 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         CustomTextButton(
                           label: 'Forget Password',
-                          onPressed: () {},
+                          onPressed: () {
+                            Get.toNamed(MyRoutename.forget);
+                          },
                         ),
                       ],
                     ),
@@ -81,7 +86,9 @@ class _LoginPageState extends State<LoginPage> {
                     CustomElevatedButton(
                       label: 'Login',
                       bgColor: AppColors.greendark,
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(MyRoutename.signup);
+                      },
                     ),
                     GapBox(15),
                     const CustomText(text: '_OR Continue with'),

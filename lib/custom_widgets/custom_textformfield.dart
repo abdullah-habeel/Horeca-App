@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String labelText;
-  final String hintText;
-  final IconData prefixIcon;
+  final String? hintText;
+  final IconData? prefixIcon;
   final TextEditingController? controller;
   final bool obscureText;
   final TextInputType keyboardType;
@@ -13,8 +13,8 @@ class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
     required this.labelText,
-    required this.hintText,
-    required this.prefixIcon,
+    this.hintText,
+    this.prefixIcon,
     this.controller,
     this.obscureText = false,
     this.keyboardType = TextInputType.text,

@@ -7,11 +7,14 @@ class Splash1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SplashWidget(
-      title: 'Get Food Delivered \nto Your Doorstep',
-      imagePath: ProjectImages.onboarding1,
-      buttonLabel: 'next',
-      onPressed: () {},
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: SplashWidget(
+        title: 'Get Food Delivered \nto Your Doorstep',
+        imagePath: ProjectImages.onboarding1,
+        buttonLabel: 'next',
+        onPressed: () {},
+      ),
     );
   }
 }

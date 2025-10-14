@@ -4,7 +4,9 @@ import 'package:final_project/custom_widgets/custom_text.dart';
 import 'package:final_project/custom_widgets/custom_textbutton.dart';
 import 'package:final_project/custom_widgets/custom_textformfield.dart';
 import 'package:final_project/custom_widgets/gapbox.dart';
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
@@ -65,7 +67,9 @@ class SignupPage extends StatelessWidget {
                 CustomElevatedButton(
                   label: 'Create an Account',
                   bgColor: AppColors.greendark,
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.toNamed(MyRoutename.forget);
+                  },
                 ),
                 GapBox(25),
 

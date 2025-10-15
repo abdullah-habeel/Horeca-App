@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // getPages: Approutes.routes(),
-      // initialRoute: MyRoutename.splash,
+      // initialRoute: MyRoutename.splash1,
       home: const Paging(),
     );
   }

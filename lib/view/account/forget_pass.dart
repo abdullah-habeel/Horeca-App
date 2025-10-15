@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:final_project/custom_widgets/custom_color.dart';
 import 'package:final_project/custom_widgets/custom_eleveted_button.dart';
 import 'package:final_project/custom_widgets/custom_text.dart';
 import 'package:final_project/custom_widgets/custom_textformfield.dart';
 import 'package:final_project/custom_widgets/gapbox.dart';
-import 'package:flutter/material.dart';
+import 'package:final_project/custom_widgets/custom_images.dart';
 
 class ForgetPage extends StatelessWidget {
   const ForgetPage({super.key});
@@ -11,33 +12,46 @@ class ForgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.all(25.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+      body: SizedBox.expand(
+        child: Stack(
           children: [
-            CustomText(
-              text: 'Forget \nPassword?',
-              color: AppColors.greendark,
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
+            Positioned.fill(
+              child: Image.asset(ProjectImages.background, fit: BoxFit.cover),
             ),
-
-            CustomTextFormField(
-              labelText: 'Enter your Email address',
-              hintText: 'Enter your Email address',
-              prefixIcon: Icons.mail,
-            ),
-
-            CustomText(
-              text:
-                  ' We will send you a message to set or reset your new password',
-            ),
-            GapBox(25),
-            CustomElevatedButton(
-              label: 'Submit',
-              bgColor: AppColors.greendark,
-              onPressed: () {},
+            SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CustomText(
+                        text: 'Forget \nPassword?',
+                        color: AppColors.greendark,
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      GapBox(20),
+                      CustomTextFormField(
+                        labelText: 'Enter your Email address',
+                        hintText: 'Enter your Email address',
+                        prefixIcon: Icons.mail,
+                      ),
+                      GapBox(15),
+                      CustomText(
+                        text:
+                            'We will send you a message to set or reset your new password',
+                      ),
+                      GapBox(25),
+                      CustomElevatedButton(
+                        label: 'Submit',
+                        bgColor: AppColors.greendark,
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),

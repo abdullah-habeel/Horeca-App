@@ -3,7 +3,6 @@ import 'package:final_project/custom_widgets/searchtile.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/custom_widgets/appbar_class.dart';
 import 'package:final_project/custom_widgets/bottom_navigation_bar.dart';
-import 'package:final_project/custom_widgets/custom_color.dart';
 import 'package:final_project/custom_widgets/gradant_container.dart';
 import 'package:final_project/custom_widgets/custom_images.dart';
 

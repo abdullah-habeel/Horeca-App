@@ -1,3 +1,4 @@
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/custom_widgets/custom_color.dart';
 import 'package:final_project/custom_widgets/custom_eleveted_button.dart';
@@ -5,6 +6,7 @@ import 'package:final_project/custom_widgets/custom_text.dart';
 import 'package:final_project/custom_widgets/custom_textformfield.dart';
 import 'package:final_project/custom_widgets/gapbox.dart';
 import 'package:final_project/custom_widgets/custom_images.dart';
+import 'package:get/get.dart';
 
 class ForgetPage extends StatelessWidget {
   const ForgetPage({super.key});
@@ -46,7 +48,9 @@ class ForgetPage extends StatelessWidget {
                       CustomElevatedButton(
                         label: 'Submit',
                         bgColor: AppColors.greendark,
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed(MyRoutename.homepage);
+                        },
                       ),
                     ],
                   ),

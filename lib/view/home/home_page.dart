@@ -1,4 +1,5 @@
 import 'package:final_project/custom_widgets/searchtile.dart';
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/custom_widgets/appbar_class.dart';
 import 'package:final_project/custom_widgets/bottom_navigation_bar.dart';
@@ -11,6 +12,7 @@ import 'package:final_project/custom_widgets/gapbox.dart';
 import 'package:final_project/custom_widgets/gradant_container.dart';
 import 'package:final_project/custom_widgets/image_inbuilder.dart';
 import 'package:final_project/custom_widgets/list_tile_class.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -109,7 +111,12 @@ class _HomePageState extends State<HomePage> {
             bottom: 150,
             right: MediaQuery.of(context).size.width / 2 - 200,
 
-            child: FAB(icon: Icons.arrow_forward, onPressed: () {}),
+            child: FAB(
+              icon: Icons.arrow_forward,
+              onPressed: () {
+                Get.toNamed(MyRoutename.productpage);
+              },
+            ),
           ),
         ],
       ),

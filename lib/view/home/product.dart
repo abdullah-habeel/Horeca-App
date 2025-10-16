@@ -1,10 +1,12 @@
 import 'package:final_project/custom_widgets/list_tile_class.dart';
 import 'package:final_project/custom_widgets/searchtile.dart';
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
 import 'package:final_project/custom_widgets/appbar_class.dart';
 import 'package:final_project/custom_widgets/bottom_navigation_bar.dart';
 import 'package:final_project/custom_widgets/gradant_container.dart';
 import 'package:final_project/custom_widgets/custom_images.dart';
+import 'package:get/get.dart';
 
 class ProductPage extends StatefulWidget {
   const ProductPage({super.key});
@@ -95,7 +97,9 @@ class _ProductPageState extends State<ProductPage> {
               SearchTile(),
               MyListTile(
                 title: '125 Items Found',
-                onFilter: () {},
+                onFilter: () {
+                  Get.toNamed(MyRoutename.checkoutpage);
+                },
                 onSort: () {},
               ),
               const SizedBox(height: 16),

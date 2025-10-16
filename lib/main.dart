@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      // getPages: Approutes.routes(),
-      // initialRoute: MyRoutename.splash1,
-      home: const Paging(),
+      getPages: Approutes.routes(),
+      initialRoute: MyRoutename.splash1,
+      // home: const Paging(),
     );
   }
 }

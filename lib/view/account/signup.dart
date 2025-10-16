@@ -77,7 +77,7 @@ class SignupPage extends StatelessWidget {
                         label: 'Create an Account',
                         bgColor: AppColors.greendark,
                         onPressed: () {
-                          Get.toNamed(MyRoutename.forget);
+                          Get.toNamed(MyRoutename.homepage);
                         },
                       ),
                       GapBox(25),
@@ -94,7 +94,7 @@ class SignupPage extends StatelessWidget {
                           CustomTextButton(
                             label: 'Login',
                             onPressed: () {
-                              Get.toNamed(MyRoutename.login);
+                              Get.toNamed(MyRoutename.homepage);
                             },
                           ),
                         ],

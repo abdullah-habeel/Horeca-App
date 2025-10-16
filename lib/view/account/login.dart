@@ -24,15 +24,12 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SizedBox.expand(
-        // ✅ ensures full-screen layout
         child: Stack(
           children: [
-            // ✅ Full-screen background image
             Positioned.fill(
               child: Image.asset(ProjectImages.background, fit: BoxFit.cover),
             ),
 
-            // ✅ Foreground content with scroll
             SingleChildScrollView(
               child: SafeArea(
                 child: Padding(

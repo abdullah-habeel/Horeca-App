@@ -1,7 +1,10 @@
 import 'package:final_project/router/route_name.dart';
+import 'package:final_project/view/account/address_detail.dart';
 import 'package:final_project/view/account/error404.dart';
 import 'package:final_project/view/account/forget_pass.dart';
 import 'package:final_project/view/account/login.dart';
+import 'package:final_project/view/account/no_internet.dart';
+import 'package:final_project/view/account/not_found.dart';
 import 'package:final_project/view/account/order_history.dart';
 import 'package:final_project/view/account/profile.dart';
 import 'package:final_project/view/account/signup.dart';
@@ -31,5 +34,11 @@ class Approutes {
     GetPage(name: MyRoutename.checkoutpage, page: () => const Checkoutpage()),
     GetPage(name: MyRoutename.error, page: () => const ErrorPage()),
     GetPage(name: MyRoutename.orderhistory, page: () => const OrderHistory()),
+    GetPage(
+      name: MyRoutename.addressdetail,
+      page: () => const AddressDetailPage(),
+    ),
+    GetPage(name: MyRoutename.notfound, page: () => const NotFoundPage()),
+    GetPage(name: MyRoutename.nointernet, page: () => const NoInternetPage()),
   ];
 }

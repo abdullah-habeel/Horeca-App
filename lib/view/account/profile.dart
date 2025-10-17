@@ -2,7 +2,9 @@ import 'package:final_project/custom_widgets/custom_images.dart';
 import 'package:final_project/custom_widgets/custom_text.dart';
 import 'package:final_project/custom_widgets/icon_button.dart';
 import 'package:final_project/custom_widgets/listtileicon.dart';
+import 'package:final_project/router/route_name.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -18,7 +20,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: MyIconButton(icon: Icons.arrow_back, onPressed: () {}),
+        leading: BackButton(),
         title: const Text('Setting'),
         centerTitle: true,
       ),
@@ -51,24 +53,32 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             const SizedBox(height: 30),
 
-            // ✅ Clickable ListTiles
             TextTileIconWidget(
               title: 'Add Address',
               trailingIcon: Icons.arrow_forward_ios,
               isSelected: selectedIndex == 0,
-              onTap: () => setState(() => selectedIndex = 0),
+              onTap: () {
+                setState(() => selectedIndex = 0);
+                Get.toNamed(MyRoutename.addressdetail);
+              },
             ),
             TextTileIconWidget(
               title: 'Order History',
               trailingIcon: Icons.arrow_forward_ios,
               isSelected: selectedIndex == 1,
-              onTap: () => setState(() => selectedIndex = 1),
+              onTap: () {
+                setState(() => selectedIndex = 1);
+                Get.toNamed(MyRoutename.orderhistory);
+              },
             ),
             TextTileIconWidget(
               title: 'Logout',
               trailingIcon: Icons.arrow_forward_ios,
               isSelected: selectedIndex == 2,
-              onTap: () => setState(() => selectedIndex = 2),
+              onTap: () {
+                setState(() => selectedIndex = 2);
+                Get.toNamed(MyRoutename.nointernet);
+              },
             ),
           ],
         ),

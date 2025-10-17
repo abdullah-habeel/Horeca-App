@@ -13,8 +13,9 @@ class SettingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: MyIconButton(icon: Icons.arrow_back, onPressed: () {}),
+        // leading: MyIconButton(icon: Icons.arrow_back, onPressed: () {}),
         title: Text('Setting'),
+        leading: BackButton(),
         centerTitle: true,
       ),
       body: Padding(

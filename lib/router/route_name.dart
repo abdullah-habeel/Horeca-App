@@ -13,4 +13,7 @@ class MyRoutename {
   static const String checkoutpage = '/Checkoutpage';
   static const String error = '/Error';
   static const String orderhistory = '/Orderhistory';
+  static const String addressdetail = '/Addressdetail';
+  static const String notfound = '/Notfound';
+  static const String nointernet = '/Nointernet';
 }

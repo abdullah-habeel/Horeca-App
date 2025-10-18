@@ -16,4 +16,5 @@ class MyRoutename {
   static const String addressdetail = '/Addressdetail';
   static const String notfound = '/Notfound';
   static const String nointernet = '/Nointernet';
+  static const String productdetail = '/Productdetail ';
 }

@@ -1,5 +1,6 @@
 import 'package:final_project/router/route.dart';
 import 'package:final_project/router/route_name.dart';
+import 'package:final_project/view/checkout/product_detail.dart';
 import 'package:final_project/view/paging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,9 +21,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      getPages: Approutes.routes(),
-      initialRoute: MyRoutename.splash1,
-      // home: const Paging(),
+      // getPages: Approutes.routes(),
+      // initialRoute: MyRoutename.splash1,
+      home: const ProductDetail(),
     );
   }
 }

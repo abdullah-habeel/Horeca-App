@@ -13,7 +13,7 @@ class ProjectImages {
   static const String done = 'assets/done.png';
   static const String visa = 'assets/visa.png';
   static const String cash = 'assets/cash.jpg';
-  static const String milk = 'assets/milk.jpg';
+  static const String milk = 'assets/milk.png';
   static const String error = 'assets/error.png';
   static const String nointernet = 'assets/nointernet.png';
   static const String chicken = 'assets/chicken.jpg';
